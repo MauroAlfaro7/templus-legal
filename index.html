@@ -98,7 +98,15 @@
       ejercicio, y se devuelve el resultado a la app.</li>
   <li><strong>Resúmenes del día o de la semana:</strong> se envía el detalle de
       lo que registraste en ese periodo para generar el comentario.</li>
+  <li><strong>Notas de voz:</strong> si dictas una nota al registrar un alimento,
+      la grabación se envía para transcribirla a texto. El audio se procesa en
+      el momento y no se almacena.</li>
 </ul>
+<p>
+  Ni las fotos ni las grabaciones de voz se guardan en nuestros servidores: se
+  envían, se procesan y se descarta el archivo. Solo se registra que la función
+  se usó, para aplicar el límite diario.
+</p>
 <p>
   Estas peticiones pasan por nuestros servidores en Supabase, que actúan de
   intermediario y aplican los límites de uso. Google trata esos datos según sus
@@ -137,7 +145,8 @@
           máquinas de gimnasio para el análisis con IA.</td></tr>
   <tr><td>Micrófono</td>
       <td>Dictar por voz una nota al registrar un alimento. Solo se activa cuando
-          pulsas el botón de grabar.</td></tr>
+          pulsas el botón de grabar; la grabación se envía para transcribirla y
+          no se almacena (ver sección 4).</td></tr>
   <tr><td>Notificaciones</td>
       <td>Recordatorios de entrenamiento, de suplementos y de rachas. Se generan
           en tu teléfono.</td></tr>
