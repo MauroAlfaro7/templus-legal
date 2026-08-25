@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidad — Templus</title>
+<style>
+  :root { --tinta:#16202b; --suave:#5a6b7c; --linea:#e2e8ee; --fondo:#ffffff; --acento:#0090D6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --tinta:#e8eef4; --suave:#9aa9b8; --linea:#26313d; --fondo:#0f151b; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--fondo); color:var(--tinta);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 22px 90px; }
+  h1 { font-size: 30px; line-height:1.2; margin: 0 0 6px; letter-spacing:-.02em; }
+  h2 { font-size: 19px; margin: 38px 0 10px; padding-top: 20px; border-top: 1px solid var(--linea); }
+  p, li { color: var(--tinta); }
+  .sub { color: var(--suave); margin: 0 0 4px; }
+  .fecha { color: var(--suave); font-size: 14px; margin: 0 0 8px; }
+  ul { padding-left: 20px; }
+  li { margin: 7px 0; }
+  a { color: var(--acento); }
+  table { width:100%; border-collapse: collapse; margin: 14px 0; font-size: 15px; display:block; overflow-x:auto; }
+  th, td { text-align:left; padding: 9px 10px; border-bottom: 1px solid var(--linea); vertical-align: top; }
+  th { color: var(--suave); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing:.06em; }
+  .destacado { border:1px solid var(--linea); border-left:3px solid var(--acento);
+               padding: 14px 16px; margin: 18px 0; border-radius: 0 8px 8px 0; }
+  footer { margin-top: 44px; padding-top: 18px; border-top:1px solid var(--linea);
+           color: var(--suave); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Política de Privacidad de Templus</h1>
+<p class="sub">Aplicación de entrenamiento y nutrición</p>
+<p class="fecha">Última actualización: 25 de agosto de 2026</p>
+
+<div class="destacado">
+  <strong>En resumen:</strong> Templus guarda tus entrenamientos y tu alimentación
+  <strong>en tu propio teléfono</strong>. Solo salen de ahí si tú activas la copia
+  de seguridad en la nube o si usas el análisis con inteligencia artificial. No
+  vendemos tus datos ni los compartimos con anunciantes.
+</div>
+
+<h2>1. Quién trata tus datos</h2>
+<p>
+  Templus es desarrollada de forma independiente por Mauro Alfaro. Para cualquier
+  consulta sobre esta política o sobre tus datos, escribe a
+  <a href="mailto:contacto@templus.cl">contacto@templus.cl</a>.
+</p>
+
+<h2>2. Qué datos se guardan en tu teléfono</h2>
+<p>
+  La app funciona sin conexión. Estos datos se almacenan en una base de datos
+  local en tu dispositivo y <strong>no se envían a ningún servidor</strong> salvo
+  en los casos descritos en las secciones 3 y 4:
+</p>
+<ul>
+  <li>Rutinas, ejercicios, series, pesos y sesiones de entrenamiento.</li>
+  <li>Registro de alimentación, agua y suplementos.</li>
+  <li>Peso corporal y medidas que registres.</li>
+  <li>Pasos diarios contados por el sensor del teléfono.</li>
+  <li>Tu progreso en la app: nivel, experiencia y logros.</li>
+</ul>
+<p>
+  Si desinstalas la app, estos datos se borran con ella.
+</p>
+
+<h2>3. Cuenta y copia de seguridad (opcional)</h2>
+<p>
+  Puedes usar Templus sin crear una cuenta. Si decides crearla, se usa
+  <strong>Supabase</strong> como proveedor de autenticación y almacenamiento.
+</p>
+<ul>
+  <li><strong>Al registrarte:</strong> se guarda tu correo electrónico. Si entras
+      con Google, se recibe además tu nombre y tu foto de perfil de Google.</li>
+  <li><strong>Copia de seguridad:</strong> solo si la activas manualmente, se sube
+      una copia de los datos de la sección 2 a tu cuenta, para que puedas
+      recuperarlos en otro teléfono. Nadie más tiene acceso a ella.</li>
+  <li><strong>Compartir rutinas:</strong> si generas un enlace para compartir una
+      rutina, esa rutina queda accesible para quien tenga el enlace.</li>
+  <li><strong>Reportes de error:</strong> si envías un reporte, se guarda el texto
+      y, si adjuntas una captura, la imagen, en un espacio privado ligado a tu
+      cuenta.</li>
+</ul>
+
+<h2>4. Análisis con inteligencia artificial (opcional)</h2>
+<p>
+  Templus ofrece funciones que analizan tu alimentación y tus entrenamientos con
+  el modelo <strong>Gemini de Google</strong>. Estas funciones solo se ejecutan
+  cuando tú las pides expresamente.
+</p>
+<ul>
+  <li><strong>Fotos de comida y de máquinas de gimnasio:</strong> la imagen que
+      tomas se envía al servicio de Google para identificar el alimento o el
+      ejercicio, y se devuelve el resultado a la app.</li>
+  <li><strong>Resúmenes del día o de la semana:</strong> se envía el detalle de
+      lo que registraste en ese periodo para generar el comentario.</li>
+</ul>
+<p>
+  Estas peticiones pasan por nuestros servidores en Supabase, que actúan de
+  intermediario y aplican los límites de uso. Google trata esos datos según sus
+  propias condiciones para la API de Gemini.
+</p>
+
+<h2>5. Búsqueda de alimentos</h2>
+<p>
+  Al buscar un alimento o escanear un código de barras, el texto que escribes o
+  el código leído se consultan en <strong>Open Food Facts</strong> y
+  <strong>FatSecret</strong>. Solo viaja el término de búsqueda: no se envían tus
+  datos personales ni tu registro de comidas.
+</p>
+
+<h2>6. Estadísticas de uso</h2>
+<p>
+  Para entender qué funciones se usan y detectar fallos, se registran eventos de
+  uso con <strong>PostHog</strong> (servidores en Estados Unidos).
+</p>
+<ul>
+  <li>Se registra qué pantallas y funciones se abren, no su contenido.</li>
+  <li>Si no has iniciado sesión, se usa un identificador aleatorio generado en tu
+      teléfono, que no permite identificarte personalmente.</li>
+  <li>Si has iniciado sesión, los eventos quedan asociados a tu cuenta.</li>
+</ul>
+<p>Estos datos no se venden ni se usan para publicidad.</p>
+
+<h2>7. Permisos del teléfono y para qué se usan</h2>
+<table>
+  <tr><th>Permiso</th><th>Para qué</th></tr>
+  <tr><td>Reconocimiento de actividad</td>
+      <td>Contar tus pasos diarios con el sensor del teléfono. El conteo ocurre en
+          el dispositivo.</td></tr>
+  <tr><td>Cámara</td>
+      <td>Escanear códigos de barra de alimentos y tomar fotos de comida o de
+          máquinas de gimnasio para el análisis con IA.</td></tr>
+  <tr><td>Micrófono</td>
+      <td>Dictar por voz una nota al registrar un alimento. Solo se activa cuando
+          pulsas el botón de grabar.</td></tr>
+  <tr><td>Notificaciones</td>
+      <td>Recordatorios de entrenamiento, de suplementos y de rachas. Se generan
+          en tu teléfono.</td></tr>
+  <tr><td>Servicio en primer plano</td>
+      <td>Mantener el contador de pasos activo con la app cerrada.</td></tr>
+  <tr><td>Inicio automático y batería</td>
+      <td>Que el contador de pasos siga funcionando tras reiniciar el teléfono.</td></tr>
+</table>
+<p>
+  Templus <strong>no</strong> usa Health Connect ni accede a datos de salud de
+  otras aplicaciones.
+</p>
+
+<h2>8. Menores de edad</h2>
+<p>
+  Templus no está dirigida a menores de 13 años y no recopila datos de forma
+  consciente de personas de esa edad.
+</p>
+
+<h2>9. Cuánto se conservan tus datos</h2>
+<ul>
+  <li>Los datos locales se conservan hasta que los borres o desinstales la app.</li>
+  <li>La copia de seguridad en la nube se conserva mientras exista tu cuenta.</li>
+  <li>Los eventos de uso se conservan mientras sean útiles para mejorar la app.</li>
+</ul>
+
+<h2>10. Tus derechos y cómo ejercerlos</h2>
+<ul>
+  <li><strong>Ver y exportar:</strong> puedes exportar todos tus datos desde
+      Perfil → Configuración → Avanzado → Exportar.</li>
+  <li><strong>Borrar:</strong> desinstalar la app elimina los datos locales.</li>
+  <li><strong>Borrar tu cuenta y tu copia de seguridad:</strong> escribe a
+      <a href="mailto:contacto@templus.cl">contacto@templus.cl</a> y se eliminarán
+      tu cuenta y todos los datos asociados.</li>
+  <li>Tienes derecho a acceder, rectificar, oponerte y solicitar la portabilidad
+      de tus datos.</li>
+</ul>
+
+<h2>11. Cambios en esta política</h2>
+<p>
+  Si esta política cambia, se actualizará esta página y se modificará la fecha
+  del encabezado. Los cambios importantes se avisarán dentro de la app.
+</p>
+
+<footer>
+  Templus · Política de Privacidad · Última actualización: 25 de agosto de 2026
+</footer>
+
+</main>
+</body>
+</html>
